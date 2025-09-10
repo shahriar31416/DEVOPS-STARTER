@@ -25,12 +25,12 @@ make down
 
 ## Kubernetes
 ```bash
-# assuming you have a cluster and kubectl context set
+# assuming that I have a cluster and kubectl context set
 kubectl apply -k k8s
 kubectl get svc devops-starter-svc
 ```
 
-Edit image in `k8s/kustomization.yaml` to point to your registry:
+Edit image in `k8s/kustomization.yaml` to point to one's registry:
 ```
 images:
   - name: ghcr.io/your-username/devops-starter
